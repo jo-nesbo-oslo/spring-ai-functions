@@ -23,4 +23,9 @@ public class QuestionController {
         return openAIService.getAnswer(question);
     }
 
+   @PostMapping("/quote")
+    public Answer askQuestionQuote(@RequestBody Question question) {
+        return openAIService.getAnswerQuote(question);
+    }
+
 }
