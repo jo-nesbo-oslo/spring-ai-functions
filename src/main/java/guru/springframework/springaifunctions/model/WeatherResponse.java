@@ -4,6 +4,16 @@ import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 
 import java.math.BigDecimal;
 
+/*
+{
+  "ticker": "AAPL",
+  "name": "Apple Inc.",
+  "price": 192.42,
+  "exchange": "NASDAQ",
+  "updated": 1706302801,
+  "currency": "USD"
+}
+ */
 public record WeatherResponse(@JsonPropertyDescription("WindSpeed in KMH") BigDecimal windSpeed,
                               @JsonPropertyDescription("Direction of wind") Integer windDegrees,
                               @JsonPropertyDescription("Current Temperature in Celsius") Integer temp,
